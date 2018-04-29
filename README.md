@@ -7,17 +7,17 @@ The objective is to fill a 9×9 grid with digits so that each column, each row, 
 
 ### input format:
 
-1-2 3     // fill in row1 col2 with 3
+    1-2 3     // fill in row1 col2 with 3
 
-...
+    ...
 
-^Z        // end with EOF
+    ^Z        // end with EOF
 
 ### output format:
 
-1-1 4     // output the cell which we is not in input
+    1-1 4     // output the cell which we is not in input
 
-...
+    ...
 
 
 # Project #3 : Graph Problem
@@ -26,6 +26,6 @@ Answering the number of triangles and connected diameter.
 
 ### test data:
 
-https://snap.stanford.edu/data/
+    https://snap.stanford.edu/data/
 
-(email-Enron and ego-Facebook will be tested.)
+    (email-Enron and ego-Facebook will be tested.)
