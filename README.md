@@ -22,3 +22,9 @@ output format:
 Project #3 : 
 
 Answering the number of triangles and connected diameter
+
+test data:
+
+https://snap.stanford.edu/data/
+
+(email-Enron and ego-Facebook will be tested.)
