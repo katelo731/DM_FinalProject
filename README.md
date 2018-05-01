@@ -5,7 +5,7 @@ Final project of Discrete Mathematics in NCTU
 
 The objective is to fill a 9×9 grid with digits so that each column, each row, and each of the nine 3×3 subgrids that compose the grid (also called "boxes", "blocks", "regions", or "subsquares") contains all of the digits from 1 to 9.
 
-### input format:
+### input format :
 
     1-2 3     // fill in row1 col2 with 3
 
@@ -13,7 +13,7 @@ The objective is to fill a 9×9 grid with digits so that each column, each row, 
 
     ^Z        // end with EOF
 
-### output format:
+### output format :
 
     1-1 4     // output the cell which we is not in input
 
@@ -24,7 +24,7 @@ The objective is to fill a 9×9 grid with digits so that each column, each row, 
 
 Answering the number of triangles and connected diameter.
 
-### test data:
+### test data :
 
      https://snap.stanford.edu/data/
 
