@@ -159,11 +159,14 @@ int main()
 		for(int j=1;j<N;j++)
 		{
 			if(i==1 && j==1) 
+			{
+				SetConsoleTextAttribute(hConsole, 15);
 				cout << " ------------------------- " << endl;
+			}	
 				
 			if(j==1) 
 			{
-				SetConsoleTextAttribute(hConsole, 10);
+				SetConsoleTextAttribute(hConsole, 15);
 				cout << " | ";
 			}	
 			
@@ -179,12 +182,12 @@ int main()
 			}
 			if(j%3==0) 
 			{
-				SetConsoleTextAttribute(hConsole, 10);
+				SetConsoleTextAttribute(hConsole, 15);
 				cout << "| " ;
 			}
 			if(i%3==0 && j==9) 
 			{
-				SetConsoleTextAttribute(hConsole, 10);
+				SetConsoleTextAttribute(hConsole, 15);
 				cout << endl << " ------------------------- " << endl;
 			}
 			else if(j==9) cout << endl;
