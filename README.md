@@ -15,9 +15,7 @@ The objective is to fill a 9×9 grid with digits so that each column, each row, 
 
 ### output format :
 
-    1-1 4     // output the cell which we is not in input
-
-    ...
+   [!image](https://github.com/katelo731/DM_FinalProject/blob/master/sudoku.PNG)
 
 
 ## Project #3 : Graph Problem
