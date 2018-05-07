@@ -1,6 +1,7 @@
 #include <iostream>
 #include <algorithm>
 #include <cstdlib>
+#include <windows.h>
 #include <set>
 #define M 10
 #define N 10
@@ -14,6 +15,7 @@ int col[M][N]={};
 int sqr[M][N]={};
 int c=0;
 bool flag=false;
+HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 
 int DFS(int cell)
 {
@@ -149,16 +151,47 @@ int main()
 	// descending order order[81][2]
 	
 	DFS(order[c][0]);
+	
+	cout << endl;
 
 	for(int i=1;i<M;i++)
 	{
 		for(int j=1;j<N;j++)
 		{
-			if(rec[i][j]==0)
-			cout << i << "-" << j << " " << sudoku[i][j] << endl;
+			if(i==1 && j==1) 
+				cout << " ------------------------- " << endl;
+				
+			if(j==1) 
+			{
+				SetConsoleTextAttribute(hConsole, 10);
+				cout << " | ";
+			}	
 			
+			if(rec[i][j]==0)
+			{
+				SetConsoleTextAttribute(hConsole, 10);
+				cout << sudoku[i][j] << " ";
+			}
+			else
+			{
+				SetConsoleTextAttribute(hConsole, 15);
+				cout << sudoku[i][j] << " ";
+			}
+			if(j%3==0) 
+			{
+				SetConsoleTextAttribute(hConsole, 10);
+				cout << "| " ;
+			}
+			if(i%3==0 && j==9) 
+			{
+				SetConsoleTextAttribute(hConsole, 10);
+				cout << endl << " ------------------------- " << endl;
+			}
+			else if(j==9) cout << endl;
 		}
 	}
+	
+	cout << endl;
 
 	system("pause");
 	return 0;
