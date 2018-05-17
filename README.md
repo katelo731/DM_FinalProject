@@ -1,5 +1,4 @@
 # DM_FinalProject
-Final project of Discrete Mathematics in NCTU
 
 ## Project #1 : A Sudoku Solver using Graph Coloring
 
