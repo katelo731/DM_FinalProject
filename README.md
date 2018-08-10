@@ -14,7 +14,7 @@ The objective is to fill a 9×9 grid with digits so that each column, each row, 
 
 ### output format :
 
-   ![image](https://github.com/katelo731/DM_FinalProject/blob/master/sudokupic.PNG)
+<img src="https://github.com/katelo731/DM_FinalProject/blob/master/sudokupic.PNG" width="60%" height="60%">
    
     green number is the answer to the sudoku that is computed via the code,
     white number is the input. 
