@@ -11,6 +11,8 @@ The objective is to fill a 9×9 grid with digits so that each column, each row, 
     ...
 
     ^Z        // end with EOF
+    
+- **Update (2018/8/10) : include fstream library, only need to place test_data.txt in the same folder with .cpp file**
 
 ### output format :
 
