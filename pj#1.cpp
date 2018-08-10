@@ -2,12 +2,13 @@
 #include <algorithm>
 #include <cstdlib>
 #include <windows.h>
+#include <fstream>
 #include <set>
 #define M 10
 #define N 10
 using namespace std;
 
-int sudoku[M][N]={};	// real sudoku 
+int sudoku[M][N]={};		// real sudoku 
 int rec[M][N]={};		// record the initial value
 int order[81][2]={};
 int row[M][N]={}; 		// row[i][num] means the row i has appeared # num
@@ -74,16 +75,17 @@ int Cmp(const void *lhs, const void *rhs)
 
 int main()
 {
+	ifstream fin("pj#1_test_data.txt");
+	string inputstr;
 	set<int> sn;
 	int a,b,color;
 	int count[M][N]={};   // count the degree of the cell
 	
-	while(cin >> a)
+	while(getline(fin,inputstr))
 	{
-		cin.ignore();
-		cin >> b;
-		cin.ignore();
-		cin >> color;
+		a = inputstr[0]-'0';
+		b = inputstr[2]-'0';
+		color = inputstr[4]-'0';;
 		
 		sudoku[a][b]=color;    	
 		rec[a][b]++;
